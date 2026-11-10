@@ -1,0 +1,23 @@
+.{
+    .name = .kosm_fontconfig,
+    .version = "0.0.0",
+    .fingerprint = 0x2cf87d47685761ac, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        .kosm_xml = .{
+            .url = "git+https://git.nnstdios.com/nnra6864/kosm_xml?ref=master#9bec8f3ad99a59d032d0bc6a00a70adabfae2bec",
+            .hash = "kosm_xml-0.0.0-DlY3b3cxAAC45Kw64dJ8YkGBLpfQjITc7JG12vkNQWrz",
+        },
+        .kosm = .{
+            .url = "git+https://git.nnstdios.com/nnra6864/kosm?ref=master#d89f4b167fa476aa95983cdcb3b67b3e3f1811f5",
+            .hash = "kosm-0.0.0-YCShsiWXCgA01TgU-4rwO_b2OZNVrGQL-PZyw0BkLfWc",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "root.zig",
+        "App.zig",
+        "README.md",
+    },
+}
