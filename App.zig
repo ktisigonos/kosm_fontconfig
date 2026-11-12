@@ -136,7 +136,7 @@ test "with every family null the file holds no alias" {
     var fixture: Fixture = undefined;
     try fixture.init();
     defer fixture.deinit();
-    try from(kosm.Theme.from(.{ .black = kosm.hex("000000"), .white = kosm.hex("ffffff") }, .dark)).apply(&fixture.output);
+    try from(kosm.Theme.from(.{ .palette = .{ .black = kosm.hex("000000"), .white = kosm.hex("ffffff") }, .mode = .dark })).apply(&fixture.output);
     try testing.expectEqualStrings(
         \\<?xml version="1.0"?>
         \\<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
